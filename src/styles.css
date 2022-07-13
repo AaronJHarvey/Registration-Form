@@ -18,3 +18,10 @@ label {
 	display: block;
 	margin: .5rem 0;
 }
+
+form {
+	margin: 0 auto;
+	max-width: 500px;
+	min-width: 300px;
+	width: 60vw;
+}
