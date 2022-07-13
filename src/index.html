@@ -14,14 +14,14 @@
 
         <form action=" https://register-demo.freecodecamp.org">
             <fieldset>
-                <label>Enter Your First Name: <input type="text" required />
+                <label>Enter Your First Name: <input type="text" name="first-name" required />
                 </label>
-                <label>Enter Your Last Name: <input type="text" required/>
+                <label>Enter Your Last Name: <input type="text" name='last-name'required/>
                 </label>
-                <label>Enter Your Email: <input type="email" required />
+                <label>Enter Your Email: <input type="email" name='email' required />
                 </label>
                 
-                <label>Enter A New Password: <input type="password" pattern='[a-z0-5]{8,}' required/>
+                <label>Enter A New Password: <input type="password" pattern='[a-z0-5]{8,}' name="password" required/>
                 
                 </label>
             </fieldset>
@@ -43,11 +43,11 @@
             </fieldset>
 
             <fieldset>
-                <label>Upload a profile picture: <input type="file" /></label>
-                <label>Input your age (years): <input type='number' min='13' /></label>
+                <label>Upload a profile picture: <input type="file" name='profile-pic'/></label>
+                <label>Input your age (years): <input type='number' min='13' name='age'/></label>
                 
                 <label>How did you hear about us?
-                    <select>
+                    <select name="referral-type">
                         <option value="">(select one)</option>
                         <option value="1">freeCodeCamp News</option>
                         <option value="2">freeCodeCamp YouTube Channel</option>
@@ -57,7 +57,7 @@
                 </label>
 
                 <label>Provide a Bio: 
-                    <textarea rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+                    <textarea rows="3" cols="30" placeholder="I like coding on the beach..." name="bio"></textarea>
                 </label>
             </fieldset>
 
